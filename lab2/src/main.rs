@@ -20,7 +20,7 @@ fn main() {
             Err(_) => println!("Invalid input. Please try again."),
         }
     };
-    // Get the operator
+
     let operator = loop {
         println!("Enter the operator (+, -, *, /):");
         let mut input = String::new();
@@ -42,7 +42,7 @@ fn main() {
             }
             num1 / num2
         }
-        _ => unreachable!(), // Impossible case due to operator validation
+        _ => unreachable!(),
     };
     println!("Result: {} {} {} = {}", num1, operator, num2, result);
 }
